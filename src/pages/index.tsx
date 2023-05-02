@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <ShopLayout
       title="Teslo-Shop - Home"
-      description="Find the best products from Teslo"
+      pageDescription="Find the best products from Teslo"
     >
       <h1 className="text-3xl font-semibold ">Shop</h1>
       <h2 className="text-xl mb-1 ">All the products.</h2>

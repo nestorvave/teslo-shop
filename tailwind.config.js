@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -6,11 +7,7 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      primary: "#1E1E1E",
-      seconday: "#3A64D8",
-    },
     extend: {},
   },
-  plugins: [],
+  plugins: [require('prettier-plugin-tailwindcss')],
 };
