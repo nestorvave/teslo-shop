@@ -52,7 +52,7 @@ export const Navbar = () => {
           </a>
         </NextLink>
         <a className="m-0 flex cursor-pointer items-center">
-          <button className="w-13 rounded-md border border-none p-2 text-xs font-semibold hover:bg-gray-100">
+          <button className="w-13 ml-1 rounded-md border border-none p-2 text-xs font-semibold hover:bg-gray-100">
             Menu
           </button>
         </a>
