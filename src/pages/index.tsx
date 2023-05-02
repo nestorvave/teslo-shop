@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { Inter } from "next/font/google";
 import { ShopLayout } from "../components/layouts";
 import { initialData } from "../../database/products";
@@ -16,7 +16,12 @@ export default function Home() {
 
       <section className="grid grid-cols-1 gap-2  sm:grid-cols-2 md:grid-cols-3 ">
         {initialData.products.map((product) => (
-          <div className="border">gf</div>
+          <div className="border" key={product.title}>
+            <img
+              src={`/products/${product.images[0]}`}
+              alt={product.title}
+            />
+          </div>
         ))}
       </section>
     </ShopLayout>
